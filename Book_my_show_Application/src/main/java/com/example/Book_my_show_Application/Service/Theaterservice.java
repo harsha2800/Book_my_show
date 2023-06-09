@@ -24,6 +24,8 @@ public class Theaterservice {
 
         List<TheaterSeatEntity> theaterSeatEntityList = createTheaterSeats(theaterEntryDto,theaterEntity);
 
+        theaterEntity.setTheaterSeatEntityList(theaterSeatEntityList);
+
         return "";
     }
 
